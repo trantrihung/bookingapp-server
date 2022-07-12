@@ -1,24 +1,18 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import { routes } from './routes/index.js';
+import { connectDB } from './config/db/index.js';
+import cookieParser from 'cookie-parser';
 
-dotenv.config();
 const app = express();
-
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO);
-    console.log('connected to mongoDB');
-  } catch (error) {
-    throw error;
-  }
-};
 
 mongoose.connection.on('disconnected', () => {
   console.log('mongoDB disconnected');
 });
 
+//json
+app.use(cookieParser());
+app.use(express.json());
 //middleware
 routes(app);
 

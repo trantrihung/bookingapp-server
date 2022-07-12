@@ -10,10 +10,10 @@ mongoose.connection.on('disconnected', () => {
   console.log('mongoDB disconnected');
 });
 
-//json
-app.use(cookieParser());
-app.use(express.json());
 //middleware
+app.use(cookieParser());
+//json
+app.use(express.json());
 routes(app);
 
 app.listen(8800, () => {

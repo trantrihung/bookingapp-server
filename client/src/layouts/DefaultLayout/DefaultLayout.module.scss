@@ -1,0 +1,12 @@
+.layout {
+  position: relative;
+  .wrap {
+    display: flex;
+    .sidebar {
+      min-width: 320px;
+    }
+    .content {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use '../../../sass/helper' as *;
+@use '../../../sass/util' as *;
+
+.nav {
+  background: rgb(2, 59, 150);
+  min-height: 430px;
+  position: relative;
+}
+.nav__profile {
+  display: flex;
+  justify-content: flex-end;
+  //min-width: 186px;
+
+  &_item {
+    color: rgb(226, 232, 242);
+    font-family: inherit;
+    min-height: 40px;
+    background: rgba(108, 134, 177, 20%);
+    border-radius: $border-rounded;
+    -webkit-border-radius: $border-rounded;
+    -moz-border-radius: $border-rounded;
+    -ms-border-radius: $border-rounded;
+    -o-border-radius: $border-rounded;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(2) {
+      margin-left: 20px;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+      margin: 0 5px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    span {
+      margin: 0 10px 0 0;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin: 0 5px;
+    }
+  }
+}

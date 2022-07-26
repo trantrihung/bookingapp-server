@@ -2,17 +2,16 @@
 @use '../../../sass/util' as *;
 
 .nav {
-  background: rgb(2, 59, 150);
-  min-height: 430px;
-  position: relative;
+  // background: rgb(2, 59, 150);
+  // min-height: 430px;
+  // position: relative;
 }
-.nav__profile {
+.profile {
   display: flex;
   justify-content: flex-end;
   //min-width: 186px;
 
   &_item {
-    color: rgb(226, 232, 242);
     font-family: inherit;
     min-height: 40px;
     background: rgba(108, 134, 177, 20%);
@@ -41,6 +40,7 @@
     }
     span {
       margin: 0 10px 0 0;
+      color: rgb(226, 232, 242);
     }
     img {
       width: 30px;

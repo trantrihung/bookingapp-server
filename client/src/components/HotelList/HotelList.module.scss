@@ -1,0 +1,19 @@
+@use '../../sass/helper' as *;
+
+.hotel {
+  background-color: $bg-white;
+  margin-top: 50px;
+  border-radius: $border;
+  -webkit-border-radius: $border;
+  -moz-border-radius: $border;
+  -ms-border-radius: $border;
+  -o-border-radius: $border;
+  &__title {
+    display: flex;
+  }
+  &__content {
+    &_img {
+      width: 100%;
+    }
+  }
+}

@@ -1,10 +1,12 @@
 @use '../../sass/helper' as *;
 
 .button {
+  cursor: pointer;
   color: $text-primary;
+  line-height: 1.6;
   font-weight: 500;
   padding: 8px 16px 8px 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 1.6rem;
   transition: filter 0.3s;
   transition: all 0.3s;
@@ -13,11 +15,11 @@
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   background-color: $bg-transparent;
-  //   & + .button {
-  //     margin-left: 16px;
-  //   }
   display: flex;
-
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   &:hover {
     background-color: $btn-hover;
   }
@@ -34,7 +36,7 @@
 
   span:nth-child(1) {
     line-height: 1;
-    min-width: 25px;
+    min-width: 30px;
     // font-size: $fonts-20;
   }
   span:nth-child(2) {
@@ -54,6 +56,7 @@
 }
 .small {
   font-size: $fonts;
+  line-height: 1.8;
   span:nth-child(1) {
     font-size: $fonts-22;
   }
@@ -73,4 +76,65 @@
 .premium {
   color: $black-color;
   font-size: 1.6rem;
+  z-index: 1;
+}
+.avt__left {
+  display: flex;
+  align-items: center;
+  span:nth-child(1) {
+    color: #fad4da;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(142deg, rgba(252, 62, 99, 1) 0%, rgba(213, 4, 27, 1) 100%);
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  div:nth-child(2) {
+    line-height: 1;
+    margin-right: 20px;
+    p:nth-child(2) {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+  img {
+  }
+}
+.avt__right {
+}
+.top__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 10px;
+  span {
+    line-height: 1;
+  }
+}
+.img__left {
+  padding: 20px;
+  background-color: red;
+  align-items: center;
+  // color: $white-color;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+  }
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // background: red;
+  }
 }

@@ -1,0 +1,47 @@
+@use '../../sass/helper' as *;
+
+.search {
+  padding: 25px 35px;
+  //display: flex;
+  background-color: $bg-white;
+  border-radius: 14px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  .searchItem {
+    padding: 16px 20px;
+    cursor: pointer;
+    background-color: #f8f8fa;
+    border-radius: 14px;
+    border: 1px solid #eef0f4;
+    color: $text-secondary;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    &_icon {
+      color: #c2c6d2;
+      font-size: $fonts-14;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &_content {
+      color: $text-secondary;
+      background-color: #f8f8fa;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.6;
+      margin: 8px 0;
+      display: block;
+    }
+  }
+}
+.btn {
+  button {
+    @include button($btn-bg, $btn-color, 30px, 40px, $border, $btn-hover);
+  }
+}

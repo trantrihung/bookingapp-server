@@ -1,15 +1,35 @@
 $blue-color: rgb(10, 105, 218);
 $black-color: #333;
-$btn-hover: rgb(0, 108, 255);
 $white-color: #ffffff;
+$black_Pr: #282e44;
+$black-Second: #475073;
+
+$btn-hover: rgb(0, 108, 255);
+
 $bg-transparent: transparent;
 $bg-white: $white-color;
 $bg-primary: $blue-color;
-$border-rounded: 30px;
+$bg-offer: #f8f9fa;
+
+$border-rounded: 40px;
+$border: 10px;
+
+$fonts-12: 1.2rem;
+$fonts-14: 1.4rem;
 $fonts: 1.6rem;
 $fonts-18: 1.8rem;
 $fonts-20: 2rem;
 $fonts-22: 2.2rem;
 $fonts-24: 2.4rem;
 $fonts-28: 2.8rem;
+
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 30px;
+$pd-4: 40px;
+
 $text-primary: $white-color;
+$text-secondary: #2e3758;
+
+$btn-bg: #df142d;
+$btn-color: $white-color;

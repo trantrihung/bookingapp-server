@@ -1,6 +1,7 @@
 import styles from './Sidebar.module.scss';
 import Button from '~/components/Button';
-import logo from '~/assets/images/logo.svg';
+// import logo from '~/assets/images/logo.svg';
+import images from '~/assets/images';
 
 import { CgMenuRight } from 'react-icons/cg';
 import { AiTwotoneHome } from 'react-icons/ai';
@@ -36,12 +37,13 @@ function Sidebar() {
               Support
             </Button>
           </div>
-          <div>
-            <Button className="premium" avtLeft={<BsFillAwardFill />} secondary rounded to="/">
-              Get Premium
-            </Button>
-          </div>
+
+          <Button className="premium" avtLeft={<BsFillAwardFill />} avtRight={images.IconNext} secondary rounded to="/">
+            <p>Get Premium</p>
+            <p>$39/m</p>
+          </Button>
         </div>
+        <img className={styles.cloud} src={images.cloud} alt="cloud" />
       </div>
     </div>
   );

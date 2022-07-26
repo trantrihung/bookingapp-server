@@ -1,0 +1,16 @@
+.nav {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav__menu {
+    display: flex;
+    a {
+      min-width: 72px;
+    }
+  }
+  .flight {
+    margin-right: 100px;
+  }
+}

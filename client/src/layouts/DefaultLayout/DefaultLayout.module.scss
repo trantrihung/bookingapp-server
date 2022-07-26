@@ -1,12 +1,25 @@
 .layout {
+  background: linear-gradient(138deg, rgba(2, 59, 150, 1) 0%, rgba(2, 35, 87, 1) 100%);
+  max-height: 430px;
   position: relative;
+  .clouds {
+    position: absolute;
+    left: 0;
+  }
   .wrap {
     display: flex;
+    padding-top: 40px;
+    height: 100%;
     .sidebar {
       min-width: 320px;
     }
     .content {
       flex: 1;
+      .content__item {
+      }
     }
   }
 }
+// .content::-webkit-scrollbar {
+//   display: none; /* for Chrome, Safari, and Opera */
+// }

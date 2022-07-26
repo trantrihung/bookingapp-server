@@ -1,0 +1,120 @@
+@use '../../sass/helper' as *;
+
+.carousel {
+  margin-top: 40px;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 2.4rem;
+      line-height: 3.3rem;
+      letter-spacing: 0.0026em;
+      color: $black-Second;
+    }
+    p {
+      margin-right: 35px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #282e44;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__items {
+    position: relative;
+    border-radius: $border;
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    -ms-border-radius: $border;
+    -o-border-radius: $border;
+    cursor: pointer;
+    background-image: url('../../assets/images/lineareffect.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    .carousel__background {
+      width: 100%;
+      object-fit: cover;
+      height: 280px;
+      position: absolute;
+      z-index: -1;
+      border-radius: $border;
+      -webkit-border-radius: $border;
+      -moz-border-radius: $border;
+      -ms-border-radius: $border;
+      -o-border-radius: $border;
+    }
+    .carousel__item {
+      height: 280px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: $white-color;
+
+      &_title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        letter-spacing: 1.9px;
+        text-transform: uppercase;
+        color: $white-color;
+        opacity: 0.7;
+      }
+      &_titlePr {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.132407px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.btn {
+  a {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    background-color: $bg-transparent;
+    width: 100%;
+    padding: 0;
+    border-radius: $border-rounded;
+    -webkit-border-radius: $border-rounded;
+    -moz-border-radius: $border-rounded;
+    -ms-border-radius: $border-rounded;
+    -o-border-radius: $border-rounded;
+    align-items: center;
+    &:hover {
+      background-color: $bg-transparent;
+    }
+    .btn_Pr {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.132407px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+    .btn_Title {
+      color: #c1d4da;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      letter-spacing: 0.23px;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+  }
+}

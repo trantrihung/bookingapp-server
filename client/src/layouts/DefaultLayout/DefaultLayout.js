@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Sidebar from './Sidebar';
 import styles from './DefaultLayout.module.scss';
 import images from '~/assets/images';
+import Footer from '~/layouts/components/Footer';
+import Banner from './Banner';
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -15,8 +17,10 @@ const DefaultLayout = ({ children }) => {
         <div className={`${styles.content} container`}>
           <Header />
           <div className={styles.content__item}>{children}</div>
+          <Banner />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

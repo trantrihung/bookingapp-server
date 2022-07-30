@@ -24,6 +24,19 @@ $grid-gaps: (
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 $align-items: stretch, center, flex-start, flex-end, baseline, initial, inherit;
 
+// justify content classes
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+//align item classes
+@each $val in $align-items {
+  .align-items-#{$val} {
+    align-items: $val;
+  }
+}
 @each $key, $value in $opacity {
   .opacity-#{$key} {
     opacity: $value;
@@ -108,20 +121,6 @@ $align-items: stretch, center, flex-start, flex-end, baseline, initial, inherit;
   .gap-#{$key} {
     margin-left: -$value;
     margin-right: -$value;
-  }
-}
-
-// justify content classes
-@each $val in $layout-values {
-  .justify-#{$val} {
-    justify-content: $val;
-  }
-}
-
-//align item classes
-@each $val in $align-items {
-  .align-items-#{$val} {
-    align-items: $val;
   }
 }
 

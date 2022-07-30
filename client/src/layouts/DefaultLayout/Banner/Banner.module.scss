@@ -1,0 +1,53 @@
+@use '../../../sass/helper' as *;
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 75, 61, 1) 45%, rgba(255, 124, 114, 1) 100%);
+  padding: 60px 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: $white-color;
+  &__title {
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.21px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+      color: #ffc54d;
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        color: #ffcb60;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+      }
+    }
+  }
+  a {
+    background-color: #ff9189;
+    padding: 20px 30px;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+}

@@ -1,4 +1,5 @@
-import styles from './search.module.scss';
+import styles from './SearchMenu.module.scss';
+import Button from '../Button';
 
 import { GiPositionMarker } from 'react-icons/gi';
 import { MdEmojiPeople } from 'react-icons/md';
@@ -7,7 +8,6 @@ import { format } from 'date-fns';
 import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
-import Button from '../Button';
 
 function Search() {
   const [openDate, setOpenDate] = useState(false);

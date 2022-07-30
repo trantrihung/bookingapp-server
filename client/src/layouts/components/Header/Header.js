@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 
 import { ImHome3 } from 'react-icons/im';
 import Navbar from '~/components/Navbar';
-import Search from '~/components/Search';
+import Search from '~/components/SearchMenu';
 
 function Header() {
   return (

@@ -15,5 +15,12 @@
     &_img {
       width: 100%;
     }
+    &_top {
+      display: flex;
+      justify-content: space-between;
+    }
+    &_icon {
+      display: flex;
+    }
   }
 }

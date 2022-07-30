@@ -7,6 +7,7 @@ import polygon from './polygon.svg';
 import ht from './ht.jpg';
 import ht1 from './ht1.jpg';
 import ht2 from './ht2.jpg';
+import book from './book.png';
 
 const images = {
   logo,
@@ -18,6 +19,7 @@ const images = {
   ht,
   ht1,
   ht2,
+  book,
 };
 
 export default images;
